@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Mariusz Jacek">
@@ -8,12 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Nagroda Nobla</title>
 </head>
+
 <body>
     <main>
         <header>
 
             <div id="NavbarText">
-                <h1>Nagroda Nobla</h1>
+                <h1 id="fH1">Nagroda</h1>
+                <h1 id="sH2">Nobla</h1>
             </div>
 
             <div id="logo">
@@ -37,6 +40,14 @@
                 <img src="img/nobelPicture.jpg" alt="Alfred Nobel" id="image">
                 <h2 id="centerh2"></h2>
                 <p id="centerP"></p>
+                <p id="oneP"></p>
+                <p id="twoP"></p>
+                <p id="threeP"></p>
+                <p id="fourP"></p>
+                <p id="fiveP"></p>
+                <p id="sixP"></p>
+                <p id="sevenP"></p>
+                <p id="eightP"></p>
             </div>
             <div id="rightBar">
                 <nav>
@@ -55,55 +66,118 @@
         </footer>
     </main>
     <script>
-        function whoWasNobel(){
+        const oneP = document.getElementById('oneP');
+        const twoP = document.getElementById('twoP');
+        const threeP = document.getElementById('threeP');
+        const fourP = document.getElementById('fourP');
+        const fiveP = document.getElementById('fiveP');
+        const sixP = document.getElementById('sixP');
+        const sevenP = document.getElementById('sevenP');
+        const eightP = document.getElementById('eightP');
+        //funtions
+        function whoWasNobel() {
             const image = document.getElementById('image');
             const header = document.getElementById('centerh2');
             const paragraph = document.getElementById('centerP');
             image.src = 'img/nobel_blog.png';
             header.textContent = 'Kim był Alfred Nobel';
             paragraph.textContent = 'Szwedzki chemik, inżynier, przemysłowiec, wynalazca m.in. dynamitu, fundator Nagrody Nobla.';
+            oneP.textContent = 'Był synem Immanuela Nobla i Karoliny Ahlsell. Para pobrała się w 1827 i miała ośmioro dzieci, z których wieku dorosłego dożyli tylko Alfred i jego trzech braci';
+            twoP.textContent = 'W wieku 16 lat biegle władał językami angielskim, francuskim, niemieckim i rosyjskim';
+            threeP.textContent = 'Alfred zaczął eksperymenty z materiałami wybuchowymi i w 1862 otworzył fabrykę nitrogliceryny,';
+            fourP.textContent = 'W 1863 wynalazł detonator,';
+            fiveP.textContent = 'Dwa lata później udoskonalił detonator poprzez zastosowanie piorunianu rtęci';
+            sixP.textContent = 'W latach 70. i 80. Nobel stworzył w Europie sieć fabryk dynamitu. Kontynuował też eksperymenty z materiałami wybuchowymi; w 1875 wynalazł żelatynę wybuchową, a w 1887 balistyt';
+            sevenP.textContent = 'Nobel ofiarował swój majątek (ponad 30 mln koron szwedzkich) na stworzenie funduszu, z którego dochody miały być dzielone w formie 5 nagród przyznawanych za osiągnięcia w dziedzinie fizyki, chemii, fizjologii lub medycyny, literatury oraz na polu zbliżenia między narodami, rozbrojenia i krzewienia idei pokojowych';
+            eightP.textContent = 'Nagrody jego imienia wręczane są co roku 10 grudnia, w rocznicę śmierci';
         }
-        function aboutAward(){
+
+        function aboutAward() {
             const image = document.getElementById('image');
             const header = document.getElementById('centerh2');
             const paragraph = document.getElementById('centerP');
             image.src = 'img/nobel_blog.png';
             header.textContent = 'Historia nagrody i nominacje';
-            paragraph.textContent = `Pierwsza uroczystość wręczenia tej nagrody odbyła się w Królewskiej Akademii Muzycznej w Sztokholmie w 1901 – Pokojową Nagrodę Nobla otrzymali wtedy Jean Henri Dunant, założyciel Czerwonego Krzyża i Frédéric Passy. Od 1902 nagrody są wręczane przez króla Szwecji. Uroczystość odbywa się zawsze 10 grudnia. W przeciwieństwie do innych nagród nominacje do Nagrody Nobla są długie i rygorystyczne, podobnie jak proces wyboru laureatów. Z tego powodu nagroda ta stała się najbardziej prestiżową na świecie.
-
-                                        Propozycje dotyczące nominacji składa 3000 wybranych osobistości. Fundacja Nobla podaje, że do Pokojowej Nagrody Nobla nominować mogą następujące osoby:
-
-                                        członkowie parlamentów i rządów,
-                                        członkowie sądów międzynarodowych,
-                                        rektorzy uniwersytetów,
-                                        profesorowie nauk humanistycznych, historii, filozofii, prawa i teologii,
-                                        dyrektorzy pokojowych instytutów badawczych oraz zagranicznych instytutów politycznych,
-                                        laureaci Pokojowej Nagrody Nobla,
-                                        członkowie zarządu organizacji, które otrzymały Pokojową Nagrodę Nobla,
-                                        byli i aktualni członkowie Norweskiego Komitetu Noblowskiego,
-                                        byli doradcy mianowani przez Norweski Instytut Noblowski.`;
+            paragraph.textContent = 'wyróżnienie przyznawane za wybitne osiągnięcia naukowe, literackie lub zasługi dla społeczeństw i ludzkości, ustanowione ostatnią wolą fundatora, szwedzkiego przemysłowca i wynalazcy dynamitu, Alfreda Nobla.';
+            oneP.textContent = 'Pierwsza uroczystość wręczenia tej nagrody odbyła się w Królewskiej Akademii Muzycznej w Sztokholmie w 1901 – Pokojową Nagrodę Nobla otrzymali wtedy Jean Henri Dunant,';
+            twoP.textContent = 'W przeciwieństwie do innych nagród nominacje do Nagrody Nobla są długie i rygorystyczne, podobnie jak proces wyboru laureatów. Z tego powodu nagroda ta stała się najbardziej prestiżową na świecie.';
+            threeP.textContent = 'Propozycje dotyczące nominacji składa 3000 wybranych osobistości.';
+            fourP.textContent = 'Do Pokojowej Nagroidy Nobla może ztostać nominowany m.in';
+            fiveP.textContent = 'członkowie parlamentów i rządów, członkowie sądów międzynarodowych, profesorowie nauk humanistycznych, historii, filozofii, prawa i teologii';
+            sixP.textContent = 'dyrektorzy pokojowych instytutów badawczych oraz zagranicznych instytutów politycznych';
+            sevenP.textContent = 'Ostateczny termin zgłaszania nominacji upływa 31 stycznia. Automatycznie dyskwalifikowane są nominacje własnej osoby oraz nominacje osób zmarłych.';
+            eightP.textContent = 'W odróżnieniu od innych nagród Komitety Noblowskie informują o stosowanych przez siebie kryteriach dopiero po 50 latach od wyboru laureatów.';
         }
 
-        function fields(){
+        function fields() {
             const image = document.getElementById('image');
             const header = document.getElementById('centerh2');
             const paragraph = document.getElementById('centerP');
             image.src = 'img/nobel_blog.png';
             header.textContent = 'Dziedziny Noblowskie';
-            paragraph.textContent = 'Fizyka, ';
-            paragraph.textContent += 'Chemia, '; 
-            paragraph.textContent += 'Medycyna, ';
-            paragraph.textContent += 'Literatura, ';  
-            paragraph.textContent += 'Ekonomia, ';
+            paragraph.textContent = 'Nagrody Nobla są przyznawane corocznie i w następujących dziedzinach:';
+            oneP.textContent = 'fizyki, przez Królewską Szwedzką Akademię Nauk, za „najważniejsze odkrycie lub wynalazek w dziedzinie fizyki”';
+            twoP.textContent = 'chemii, przez Królewską Szwedzką Akademię Nauk, za „najważniejsze odkrycie lub postęp w dziedzinie chemii”';
+            threeP.textContent = 'fizjologii lub medycyny, przez Instytut Karolinska, za „najważniejsze odkrycie w dziedzinie fizjologii lub medycyny”';
+            fourP.textContent = 'literatury, przez Akademię Szwedzką, za „wybitną pracę na rzecz idealistycznych tendencji”';
+            fiveP.textContent = 'Pokojowa Nagroda Nobla, przez Norweski Komitet Noblowski,';
+            sixP.textContent = 'za „najlepszą pracę na rzecz braterstwa między narodami, likwidacji lub redukcji stałych armii oraz za udział i promocję stowarzyszeń pokojowych”.';
+            sevenP.textContent = 'Od 1968 Szwedzki Bank Narodowy przyznaje w dziedzinie ekonomii nagrodę imienia Alfreda Nobla';
+            eightP.textContent = 'Wtedy też zadecydowano, że nie będzie się zwiększać liczby dziedzin, w których są przyznawane nagrody noblowskie.';
         }
-        function polish(){
+
+        function polish() {
             const image = document.getElementById('image');
             const header = document.getElementById('centerh2');
             const paragraph = document.getElementById('centerP');
             image.src = 'img/nobel_blog.png';
-            header.textContent = 'Polscy Nobliści'; 
+            header.textContent = 'Polscy Nobliści';
             paragraph.textContent = 'Lista Polskich laureatów nagrody nobla';
+            oneP.textContent = 'Maria Skłodowska-Curie';
+            twoP.textContent = 'Henryk Sienkiewicz';
+            threeP.textContent = 'Władysław Reymont';
+            fourP.textContent = 'Czesław Miłosz';
+            fiveP.textContent = 'Lech Wałęsa';
+            sixP.textContent = 'Józef Rotblat';
+            sevenP.textContent = 'Wisława Szymborska';
+            eightP.textContent = 'Olga Tokarczuk';
+        }
+
+        function refusal() {
+            const image = document.getElementById('image');
+            const header = document.getElementById('centerh2');
+            const paragraph = document.getElementById('centerP');
+            image.src = 'img/nobel_blog.png';
+            header.textContent = 'Oni odmówili przyjęcia nagrody nobla';
+            paragraph.textContent = ' ';
+            oneP.textContent = 'Richard Kuhn';
+            twoP.textContent = 'Adolf Butenandt';
+            threeP.textContent = 'Gerhard Domagk';
+            fourP.textContent = 'Boris Pasternak';
+            fiveP.textContent = 'Jean Paul Sartre';
+            sixP.textContent = 'Lê Đức Thọ';
+            sevenP.textContent = 'W historii Nagrody Nobla 6 laureatów odmówiło jej przyjęcia, z czego 4 osoby uczyniły to w obawie przed represjami władz';
+            eightP.textContent = ' ';
+
+        }
+
+        function award() {
+            const image = document.getElementById('image');
+            const header = document.getElementById('centerh2');
+            const paragraph = document.getElementById('centerP');
+            image.src = 'img/nobel_blog.png';
+            header.textContent = 'Nagroda';
+            paragraph.textContent = 'Najwazniejsze infomracje o nagrodzie';
+            oneP.textContent = 'Każdy z laureatów otrzymuje złoty medal i dyplom honorowy.';
+            twoP.textContent = 'Nagroda Nobla ma także wymiar finansowy:';
+            threeP.textContent = 'naczną kwotę pieniężną';
+            fourP.textContent = '(do 2012 było to dziesięć milionów koron szwedzkich, czyli około 4,5 miliona złotych';
+            fiveP.textContent = 'od 2012 osiem milionów koron, czyli około 3,6 miliona złotych';
+            sixP.textContent = 'zaś w 2017 dziewięć milionów koron, czyli około 4 mln złotych';
+            sevenP.textContent = 'aby mógł kontynuować swoje badania lub prace bez konieczności zabiegania o fundusze';
+            eightP.textContent = ' ';
         }
     </script>
 </body>
+
 </html>
