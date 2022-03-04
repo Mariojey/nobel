@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mariusz Jacek">
+    <meta name="keywords" content="Laureaci, Nagrody, Nobla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nagroda Nobla</title>
+</head>
+<body>
+    <main>
+        <header>
+
+            <div id="NavbarText">
+                <h1>Nagroda Nobla</h1>
+            </div>
+
+            <div id="logo">
+                <img src="img/z16755826V,Medal-Nagrody-Nobla.jpg" alt="Medal Nagrody Nobla" id="nobelMedal">
+            </div>
+        </header>
+        <section>
+            <div id="leftBar">
+                <nav>
+
+                    <ul class="sidebarLinksLeft">
+                        <li><a onclick="whoWasNobel()">Kim był Nobel?</a></li>
+                        <li><a onclick="aboutAward()">Historia, Nagrody i Nominacje</a></li>
+                        <li><a onclick="fields()">Dziedziny Noblowskie?</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div id="centerDiv">
+
+                <img src="img/nobelPicture.jpg" alt="Alfred Nobel" id="image">
+                <h2 id="centerh2"></h2>
+                <p id="centerP"></p>
+            </div>
+            <div id="rightBar">
+                <nav>
+
+                    <ul class="sidebarLinksRight">
+                        <li><a onclick="polish()">Polscy Nobliści</a></li>
+                        <li><a onclick="refusal()">Odmowy przyjęcia nagrody</a></li>
+                        <li><a onclick="award()">Z czego składa się nagroda?</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </section>
+        <footer>
+            <h1>Mariusz Jacek 3BIp</h1>
+        </footer>
+    </main>
+    <script>
+        function whoWasNobel(){
+            const image = document.getElementById('image');
+            const header = document.getElementById('centerh2');
+            const paragraph = document.getElementById('centerP');
+            image.src = 'img/nobel_blog.png';
+            header.textContent = 'Kim był Alfred Nobel';
+            paragraph.textContent = 'Szwedzki chemik, inżynier, przemysłowiec, wynalazca m.in. dynamitu, fundator Nagrody Nobla.';
+        }
+        function aboutAward(){
+            const image = document.getElementById('image');
+            const header = document.getElementById('centerh2');
+            const paragraph = document.getElementById('centerP');
+            image.src = 'img/nobel_blog.png';
+            header.textContent = 'Historia nagrody i nominacje';
+            paragraph.textContent = `Pierwsza uroczystość wręczenia tej nagrody odbyła się w Królewskiej Akademii Muzycznej w Sztokholmie w 1901 – Pokojową Nagrodę Nobla otrzymali wtedy Jean Henri Dunant, założyciel Czerwonego Krzyża i Frédéric Passy. Od 1902 nagrody są wręczane przez króla Szwecji. Uroczystość odbywa się zawsze 10 grudnia. W przeciwieństwie do innych nagród nominacje do Nagrody Nobla są długie i rygorystyczne, podobnie jak proces wyboru laureatów. Z tego powodu nagroda ta stała się najbardziej prestiżową na świecie.
+
+                                        Propozycje dotyczące nominacji składa 3000 wybranych osobistości. Fundacja Nobla podaje, że do Pokojowej Nagrody Nobla nominować mogą następujące osoby:
+
+                                        członkowie parlamentów i rządów,
+                                        członkowie sądów międzynarodowych,
+                                        rektorzy uniwersytetów,
+                                        profesorowie nauk humanistycznych, historii, filozofii, prawa i teologii,
+                                        dyrektorzy pokojowych instytutów badawczych oraz zagranicznych instytutów politycznych,
+                                        laureaci Pokojowej Nagrody Nobla,
+                                        członkowie zarządu organizacji, które otrzymały Pokojową Nagrodę Nobla,
+                                        byli i aktualni członkowie Norweskiego Komitetu Noblowskiego,
+                                        byli doradcy mianowani przez Norweski Instytut Noblowski.`;
+        }
+
+        function fields(){
+            const image = document.getElementById('image');
+            const header = document.getElementById('centerh2');
+            const paragraph = document.getElementById('centerP');
+            image.src = 'img/nobel_blog.png';
+            header.textContent = 'Dziedziny Noblowskie';
+            paragraph.textContent = 'Fizyka, ';
+            paragraph.textContent += 'Chemia, '; 
+            paragraph.textContent += 'Medycyna, ';
+            paragraph.textContent += 'Literatura, ';  
+            paragraph.textContent += 'Ekonomia, ';
+        }
+        function polish(){
+            const image = document.getElementById('image');
+            const header = document.getElementById('centerh2');
+            const paragraph = document.getElementById('centerP');
+            image.src = 'img/nobel_blog.png';
+            header.textContent = 'Polscy Nobliści'; 
+            paragraph.textContent = 'Lista Polskich laureatów nagrody nobla';
+        }
+    </script>
+</body>
+</html>
